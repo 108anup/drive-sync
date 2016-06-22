@@ -26,6 +26,7 @@ var currDir = require(appRoot+'/src/pwd.js');
 var logout = require(appRoot+'/src/logout.js');
 var download = require(appRoot+'/src/down.js');
 var exportDoc = require(appRoot+'/src/export.js');
+var removeFile = require(appRoot + '/src/rm.js');
 
 module.exports = function(cmd, value, opt) {
 	switch(cmd) {
@@ -46,6 +47,9 @@ module.exports = function(cmd, value, opt) {
 			break;
 		case 'export':
 			exportDoc(value, opt);
+			break;
+		case 'rm':
+			removeFile(value);
 			break;
 	}
 }
