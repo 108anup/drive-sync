@@ -27,6 +27,7 @@ var logout = require(appRoot+'/src/logout.js');
 var download = require(appRoot+'/src/down.js');
 var exportDoc = require(appRoot+'/src/export.js');
 var removeFile = require(appRoot + '/src/rm.js');
+var emptyTrash = require(appRoot + '/src/empty-trash.js')
 
 module.exports = function(cmd, value, opt) {
 	switch(cmd) {
@@ -50,6 +51,9 @@ module.exports = function(cmd, value, opt) {
 			break;
 		case 'rm':
 			removeFile(value);
+			break;
+		case 'empty-trash':
+			emptyTrash();
 			break;
 	}
 }
