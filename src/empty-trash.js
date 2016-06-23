@@ -17,7 +17,7 @@
 // empty-trash.js
 
 // Usage: drive-sync empty-trash
-// Empty the Trash Folder.
+// Permanently deletes the Contents of the Trash Folder.
 
 
 var deasync = require('deasync');

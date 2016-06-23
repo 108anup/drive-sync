@@ -63,6 +63,14 @@ Currently the working CLI options include:
 		- `xls (default for sheets)`
 		- `csv (only exports the first sheet)`
 
+- **rm**
+	- Usage: `$ drive-sync rm <file-name>`
+	- Description: Delete the named file from the Drive.
+
+- **empty-trash**
+	- Usage: `$ drive-sync empty-trash`
+	- Description: Permanently deletes the Contents of the Trash Folder.
+
 - **logout**
 	- Usage: `$ drive-sync logout`
 	- Description: Logout from your account.
